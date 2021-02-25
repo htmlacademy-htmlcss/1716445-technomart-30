@@ -1,0 +1,420 @@
+/* Fons */
+@font-face {
+    font-family: "PT Sans", sans-serif;
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@Font-face {
+  font-family: "Cuprum", sans-serif;
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+  url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@Font-face {
+  font-family: "Cuprum", sans-serif;
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+  url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum", sans-serif;
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+  url("../fonts/cuprum.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* Variables */
+:root {
+    --basic-dark-dark: #293449;
+    --basic-dark: #32425C;
+    --basic-grey: #F1F5F7;
+    --basic-ligth-pink: #F9F5F0;
+    --basic-white: #F9F5F0;
+    --basic-grey-pink: #F4F4F4;
+    --basic-red: #EE3643;
+    --basic-black: #000000;
+    --basic-light-white: #FFFFFF;
+    --basic-ligth-black: #1D2739;
+
+/* text */
+
+    --text-blue: #32425C;
+    --text-black: #000000;
+    --text-white: #FFFFFF;
+    --text-dark: #32425C;
+    --text-red: #EE3643;
+    --text-footer-special-yellow: #FFD180;
+    --text-modal-grey: #A9A9A9;
+    --text-footer-nav: #F1F5F7;
+    --text-adress: #F3F7F9;
+
+
+/* blocks */
+
+    --block-orange: #FFBF47;
+    --block-green: #8ED78F;
+    --block-blue: #3BBCE3;
+    --block-pink: #DC91D8;
+
+/* button */
+
+    --button-green: #63A63E;
+    --button-red: #EE3643;
+    --button-social: #212A3A;
+    --button-icon-grey: #C5C5C5;
+    --button-red-focus: #CA2C37;
+    --button-red-active: #BA2732;
+
+
+/* modal */
+    --border-grey: #C5C5C5;
+
+}
+
+/* Global */
+.page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Cuprum, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: var(--basic-white);
+  background-image: url("../img/bg.ipg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  background-color: var(--basic-dark-dark);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-light-white);
+  width: 1200px;
+  height: 42px;
+  list-style: none;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-dark-dark);
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 47px;
+}
+
+.main-navigation {
+  text-align: center;
+}
+
+.main-navigation {
+  font-size: 18px;
+}
+
+
+.site-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-dack);
+}
+
+.site-navigation {
+  width: 940px;
+  height: 60px;
+  color:#FFFFFF;
+  background-color: var(--basic-dark);
+}
+
+.site-navigation-wrapper {
+  background-color: var(--basic-dack);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation ul{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.site-navigation ul{
+  text-align: center;
+}
+/* Не поняла, для чего нужна эта строка? */
+/* .site-navigation-current a:not(href) { */
+  /* background-color: var(--basic-white); */
+/* } */
+
+/* Popular-products */
+.index-columns1 {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/photo.jpg");
+  background-position: center, 0 0;
+  background-repeat: repeat;
+   background-color: var(--text-white);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+/* "Fabricators" */
+.index-columns2 {
+  background-color: var(--basic-white);
+  background-image: url("../img/photo.jpg");
+  background-position: center, 0 0;
+  background-repeat: repeat;
+  position: absolute;
+  width: 220px;
+  height: 145px;
+  left: 370px;
+  top: 1453px;
+
+background-color: var(--basic-light-white);
+border: 1px solid #EAEAEA;
+box-sizing: border-box;
+}
+
+/* Features */
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gallery {
+  background-color: var;
+  list-style: none;
+}
+
+.gallery h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.gallery h1 {
+  text-align: center;
+}
+
+.gallery h4 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.gallery-content {
+  background-color: var(--basic-grey);
+  border: 7px solid var(--basic-white)
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--button-red);
+  border: none;
+}
+
+.button:focus {
+  background-color: var(--button-red-focus);
+}
+
+.button:active {
+  background-color: var(--button-red-active);
+}
+.fabricators-list {
+  list-style: none;
+}
+
+.fabricators-item {
+  text-align: center;
+}
+.services h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.services p {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black);
+}
+
+.services ul {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--text-blue);
+}
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+
+.main-footer {
+  width: 1200px;
+  height: 300px;
+  list-style: none;
+}
+
+.footer-navigation {
+  background-color: var(--basic-dark);
+  color: #FFFFFF;
+  width: 1200px;
+  height: 193px;
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.footer-services a {
+  color: var(-);
+  text-decoration: underline;
+}
+
+.footer-services {
+  text-align: center;
+}
+
+.footer-features a {
+  color: var(--text-footer-special-yellow);
+  text-decoration: underline;
+}
+
+.footer-features {
+  text-align: center;
+}
+
+.footer-services-wrapper,
+.footer-features-wrapper {
+  background-color: var(--basic-dark);
+}
+
+.footer-copyright {
+  background-color: var(--basic-dark-dark);
+  color: #FFFFFF;
+  width: 1200px;
+  height: 107px;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.footer-links {
+  color: var(--text-white)
+}
+
+.footer-mail a,
+.footer-site a {
+  color: var(--text-footer-special-yellow);
+  text-decoration: underline;
+}
+
+.footer-mail:focus a,
+.footer-site:focus a {
+  background-color: var(--text-footer-special-yellow);
+}
+
+.footer-mail:actuve a,
+.footer-site:active a {
+  background-color: var(--text-red);
+}
+
+
+/* Social-button */
+.social-button {
+  color: var(--basic-white);
+  /* background: можно нарисовать в svg круг и залить его чёрным; */
+}
+
+.social-button:focus,
+.social-button:active {
+  background-color: var(--basic-red);
+}
+
+.footer-social {
+  text-align: center;
+ }
+
+ .modal-login {
+  font-size: 18px;
+  line-height: 24px;
+  font: inherit;
+  color: var(--text-black);
+  font-family: Cuprum;
+  width: 620px;
+  height: 430px;
+ background-color: var(--basic-white);
+  /* серая полоска с кномкой наложенна на белый прямоугольник
+  width: 620px;
+  height: 112px;
+ background-color: var(--basic-grey-pink); */
+ background-position: absolute;
+ background-repeat: repeat;
+ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+ text-align: left;
+ }
+
+ .login-form input[type="login"],
+ .login-form input[type="email"],
+ .login-form input[type="text"] {
+   font: inherit;
+   font-family: "PT Sans", sans-serif;
+   color: var(--text-modal-grey);
+   font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: 2px solid #C5C5C5;
+ }
+
