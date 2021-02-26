@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТЕХНОМАРТ</title>
     <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
-    <!-- <link rel="icon" href="favicon.ico"> -->
-    <!-- <link rel="icon" href="icon.svg" type="image/svg+xml"> -->
-    <!-- <link rel="apple-touch-icon" href="apple.png"> -->
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
-
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/152.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/152.png">
+    <link rel="manifest" href="favicon.webmanifest">
 </head>
 
 <body>
     <header>
-        <div>
-            <a href="index.html">
-                <img src="img/index-logo.svg" width="220" height="47" alt="ТЕХНОМАРТ">
-            </a>
-            <ul>
-                <li><a href="search.html">Поиск</a></li>
-                <li><a href="blank.html">Закладки</a></li>
-                <li><a href="blank.html">Корзина 10</a></li>
-                <li><a href="catalog.html">Оформить заказ</a></li>
-            </ul>
-        </div>
+        <nav>
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.svg/logoTexnomart.svg" width="108" height="18" alt="ТЕХНОМАРТ">
+                </a>
+                <ul>
+                    <li><a href="search.html">Поиск</a></li>
+                    <li><a href="blank.html">Закладки</a></li>
+                    <li><a href="blank.html">Корзина 10</a></li>
+                    <li><a href="catalog.html">Оформить заказ</a></li>
+                </ul>
+            </div>
+        </nav>
         <p><i>Интернет-магазин <br>строительным материалов <br>и инструментов для ремонта</i></p>
         <section>
             <a href="tel:+78126660266">+7 (812) 666-02-66</a>
@@ -73,6 +73,8 @@
     <main>
         <nav>
             <ul>
+                <!-- Так сделать знак "домой"? -->
+                <!-- <li><a href="index.html">Домой</a></li> -->
                 <li>
                     <a href="catalog.html">КАТАЛОГ</a>
                 </li>
@@ -87,19 +89,16 @@
         <section>
             <span class="letter">ПЕРФОРАТОРЫ</span>
             <!-- Карусель -->
-            <div class="carousel"></div>
-            <div class="container"></div>
-            <!-- контейнер слайда -->
-            <div class="pf"></div>
+            <!-- <div class="carousel"></div> -->
+            <!-- <div class="container"></div> -->
+            <!-- <div class="pf"></div> -->
             <div>
-                <p>
-                    <!-- Не нужно вырезать изображения, использую вместо них заглушки -->
-                    <a href="https://placeholder.com">
-                        <img src="https://via.placeholder.com/620x266" alt="#" width="620" height="266"></a>
-                </p>
-                <!-- <a href="#"> -->
-                <!-- <img src="img/photo.jpg/Layer99.jpg  width="620" height="266" alt="Дрель"> -->
-                <!-- </a> -->
+                <!-- Не нужно вырезать изображения, использую вместо них заглушки -->
+                <!-- <a href="https://placeholder.com"> -->
+                <!-- <img src="https://via.placeholder.com/620x266" alt="#" width="620" height="266"></a> -->
+                <a href="#">
+                    <img src="img/photo.jpg/drill.jpg" width="620" height="266" alt="Дрель">
+                </a>
             </div>
         </section>
         <section>
@@ -107,8 +106,8 @@
             <form method="get" action="https://echo.htmlacademy.ru"></form>
             <fieldset>
                 <legend>ЦЕНА:</legend>
-                <input type="range" min="0" max="30000" value="25000 class=" slider>
-                <p>0-30000</p>
+                <input type="range" min="0" max="30000" value="25000" class="slider">
+                <span>0-30000</span>
             </fieldset>
         </section>
         <section>
@@ -162,137 +161,122 @@
         <section>
             <h4>СОРТИРОВКА:</h4>
             <ul>
-                <li>
-                    ПО ЦЕНЕ
-                </li>
-                <li>
-                    <ins>ПО ТИПУ</ins>
-                </li>
+                <li>ПО ЦЕНЕ</li>
+                <li><ins>ПО ТИПУ</ins></li>
                 <li><ins>ПО ФУНКЦИОНАЛУ</ins></li>
             </ul>
         </section>
         <section>
-            <ul>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-945copy2.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 6000">
-                        </p>
-                    </a>
-                    <p><del>30500 Р.</del></p>
-                    <p>
-                        <button type="button">25500 Р.</button>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-945copy2.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 6000">
-                        </p>
-                    </a>
-                    <p><del>30500 Р.</del></p>
-                    <p>
-                        <button type="button">25500 Р.</button>
-                    </p>
-                </li>
-                <li>
-                    <button type="button">КУПИТЬ</button>
-                    <button type="button">В ЗАКЛАДКИ</button>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <!-- Здесь должна быть картинка -->
-                        <!-- <p>
-                                <img src="img/photo.jpg/snippet-18927copy3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000">
-                            </p> -->
-                    </a>
-                    <p><del>30500 Р.</del></p>
-                    <p>
-                        <button type="button">25500 Р.</button>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 3000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-18927copy3.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 3000">
-                        </p>
-                    </a>
-                    <p><del>22500 Р.</del></p>
-                    <p>
-                        <button type="button">15500 Р.</button>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-945copy2.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 6000">
-                        </p>
-                    </a>
-                    <p><del>30500 Р.</del></p>
-                    <button type="button">25500 Р.</button>
-                    <p>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 2000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-18927copy3.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 9000">
-                        </p>
-                    </a>
-                    <p>
-                        <button type="button">12500 Р.</button>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 3000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-18927copy3.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 3000">
-                        </p>
-                    </a>
-                    <p><del>22500 Р.</del></p>
-                    <p>
-                        <button type="button">15500 Р.</button>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-945copy2.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 6000">
-                        </p>
-                    </a>
-                    <p><del>30500 Р.</del></p>
-                    <p>
-                        <button type="button">25500 Р.</button>
-                    </p>
-                </li>
-                <li>
-                    <a href="product.html">
-                        <h3>Перфоратор BOSCH BFG 2000</h3>
-                        <p>
-                            <img src="img/photo.jpg/snippet-18927copy3.jpg" width="184" height="164"
-                                alt="Перфоратор BOSCH BFG 9000">
-                        </p>
-                    </a>
-                    <p>
-                        <button type="button">12500 Р.</button>
-                    </p>
-                </li>
-            </ul>
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <img src="img/photo.jpg/drill-3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                </a>
+                <span><del>30500 Р.</del></span>
+                <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>25500 Р.</span>
+            </div>
+
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <img src="img/photo.jpg/drill-3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                </a>
+                <span><del>30500 Р.</del></span>
+                <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>25500 Р.</span>
+            </div>
+
+            <div>
+                <img src="img/icons.svg/icon-cart.svg" width="11" height="11">
+                <img src="img/logo.svg/button-buy.svg" width="135" height="38" alt="Кнопка купить">
+                <button type="button">КУПИТЬ</button>
+                <button type="button">В ЗАКЛАДКИ</button>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
+                    <span>NEW</span>
+                    <img src="img/photo.jpg/drill-3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                </a>
+                <span><del>30500 Р.</del></span>
+                <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>25500 Р.</span>
+            </div>
+
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 3000</h3>
+                        <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
+                    <span>NEW</span>
+                        <img src="img/photo.jpg/drill-2.jpg" width="184" height="164"
+                            alt="Перфоратор BOSCH BFG 3000">
+                </a>
+                <span><del>22500 Р.</del></span>
+                    <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>15500 Р.</span>
+            </div>
+
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                    <img src="img/photo.jpg/drill-3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
+                </a>
+                <span><del>30500 Р.</del></span>
+                <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>25500 Р.</span>
+            </div>
+
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 2000</h3>
+                        <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
+                    <span>NEW</span>
+                        <img src="img/photo.jpg/drill-2.jpg" width="184" height="164"
+                            alt="Перфоратор BOSCH BFG 2000">
+                </a>
+                <span><del>22500 Р.</del></span>
+                    <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>12500 Р.</span>
+            </div>
+
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 3000</h3>
+                        <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
+                    <span>NEW</span>
+                        <img src="img/photo.jpg/drill-2.jpg" width="184" height="164"
+                            alt="Перфоратор BOSCH BFG 3000">
+                </a>
+                <span><del>22500 Р.</del></span>
+                    <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>15500 Р.</span>
+            </div>
+
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
+                        <img src="img/photo.jpg/drill-3.jpg" width="184" height="164"
+                            alt="Перфоратор BOSCH BFG 6000">
+                </a>
+                <span><del>30500 Р.</del></span>
+                    <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>25500 Р.</span>
+            </div>
+
+            <div>
+                <a href="product.html">
+                    <h3>Перфоратор BOSCH BFG 2000</h3>
+                        <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
+                    <span>NEW</span>
+                        <img src="img/photo.jpg/drill-2.jpg" width="184" height="164"
+                            alt="Перфоратор BOSCH BFG 2000">
+                </a>
+                <span><del>22500 Р.</del></span>
+                    <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
+                <span>12500 Р.</span>
+            </div>
+        </section>
+        <section>
             <ul>
                 <li>
                     <a>1</a>
@@ -323,7 +307,7 @@
     </main>
     <footer>
         <section>
-            <img src="img/index-logo.svg" width="220" height="47" alt="ТЕХНОМАРТ">
+            <img src="img/logo.svg/logoTexnomart.svg" width="220" height="47" alt="ТЕХНОМАРТ">
             <h2>НАВИГАЦИЯ</h2>
             <div>
                 <ul>
@@ -370,25 +354,29 @@
         <ul>
             <li>
                 <a href="#">Вконтакте</a>
+                <img src="img/logo.svg/vk.svg" width="44" height="44" alt="Вконтакте">
             </li>
             <li>
                 <a href="#">Фейсбук</a>
+                <img src="img/logo.svg/fasebook.svg" width="44" height="44" alt="Фейсбук">
             </li>
             <li>
                 <a href="#">Инстаграм</a>
+                <img src="img/logo.svg/instagram.svg" width="44" height="44" alt="Инстаграм">
             </li>
         </ul>
 
-        <p>
+        <span>
             Обратная связь:<br>
             <a href="mailto/https://htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
+        </span>
         <span>
             Разработано: -<br>
             <a href="https://htmlacademy.ru">htmlacademy.ru</a>
         </span>
     </footer>
     <div>
+        <img src="img/logo.svg/icon-mark.svg" width="66" height="66" alt="Отметка">
         <p>Товар добавлен в корзину!</p>
         <section>
             <button name="catalog.html">ПРОДОЛЖИТЬ ПОКУПКИ</button>
