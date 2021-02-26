@@ -1,4 +1,4 @@
-/* Fons */
+/* Fonts */
 @font-face {
     font-family: "PT Sans", sans-serif;
     src: url("../fonts/ptsans.woff2") format("woff2"),
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "PT Sans", sans-serif;
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-  url("../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -58,10 +58,9 @@
     --text-blue: #32425C;
     --text-black: #000000;
     --text-white: #FFFFFF;
-    --text-dark: #32425C;
     --text-red: #EE3643;
     --text-footer-special-yellow: #FFD180;
-    --text-modal-grey: #A9A9A9;
+    --text-grey: #A9A9A9;
     --text-footer-nav: #F1F5F7;
     --text-adress: #F3F7F9;
 
@@ -93,7 +92,7 @@
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Cuprum, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -113,29 +112,55 @@ img {
   background-color: var(--basic-dark-dark);
   font-size: 18px;
   line-height: 24px;
-  color: var(--basic-light-white);
   width: 1200px;
   height: 42px;
   list-style: none;
+  text-align: center;
+}
+.main-navigation a {
+  color: var(--text-white);
 }
 
 .main-navigation-wrapper {
   background-color: var(--basic-dark-dark);
 }
 
-.main-header-logo {
-  width: 220px;
-  height: 47px;
+/* Логотип как img не подходит, потому что меняем цвет в разном состоянии */
+span {
+  color: var(--text-white);
 }
 
-.main-navigation {
-  text-align: center;
+/* Не получается сделать разное состояние  main-navigation. */
+
+.shop {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--text-red);
+  font-style: italic;
 }
 
-.main-navigation {
-  font-size: 18px;
+.contact-phone {
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--text-red);
 }
 
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-blue);
+}
+/* Слова в ссылках не становятся чёрными */
+.login-link a,
+.registration-link a {
+  color: var(--text-black);
+}
+
+.login-link,
+.registration-link {
+  font-size: 21px;
+  line-height: 21px;
+}
 
 .site-navigation a {
   color: var(--basic-white);
@@ -149,8 +174,9 @@ img {
 .site-navigation {
   width: 940px;
   height: 60px;
-  color:#FFFFFF;
+  color: var(--text-white);
   background-color: var(--basic-dark);
+  text-align: center;
 }
 
 .site-navigation-wrapper {
@@ -169,56 +195,33 @@ img {
 .site-navigation ul{
   text-align: center;
 }
-/* Не поняла, для чего нужна эта строка? */
-/* .site-navigation-current a:not(href) { */
-  /* background-color: var(--basic-white); */
-/* } */
 
-/* Popular-products */
-.index-columns1 {
-  font-family: PT Sans;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  background-image: url("../img/photo.jpg");
-  background-position: center, 0 0;
-  background-repeat: repeat;
-   background-color: var(--text-white);
-  border: 1px solid #EAEAEA;
-  box-sizing: border-box;
-}
-/* "Fabricators" */
-.index-columns2 {
-  background-color: var(--basic-white);
-  background-image: url("../img/photo.jpg");
-  background-position: center, 0 0;
-  background-repeat: repeat;
-  position: absolute;
-  width: 220px;
-  height: 145px;
-  left: 370px;
-  top: 1453px;
-
-background-color: var(--basic-light-white);
-border: 1px solid #EAEAEA;
-box-sizing: border-box;
+.site-navigation-current a:not(href) {
+background-color: var(--basic-white);
 }
 
 /* Features */
-.features-list {
+.features {
   list-style: none;
 }
 
-.feature-item {
-  text-align: center;
+.feature h3 {
+  text-align: left;
 }
 
-.feature-item h3 {
+.feature h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+}
+
+.feature-current a:not(href) {
+  background-color: var(--basic-white);
+}
+
+.features-usefulness {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .gallery {
@@ -233,7 +236,7 @@ box-sizing: border-box;
 }
 
 .gallery h1 {
-  text-align: center;
+  text-align: left;
 }
 
 .gallery h4 {
@@ -264,6 +267,65 @@ box-sizing: border-box;
 .button:active {
   background-color: var(--button-red-active);
 }
+
+/* Popular-products */
+.index-columns1 {
+  font: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/photo.jpg");
+  background-position: center, 0 0;
+  background-repeat: repeat;
+  background-color: var(--text-white);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+
+.old,
+.actual {
+  font: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.old {
+  color: var(--text-grey);
+}
+
+.actual {
+  color: var(--text-white);
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-blue);
+}
+
+/* "Fabricators" */
+.index-columns2 {
+  background-color: var(--basic-white);
+  background-image: url("../img/logo.svg/");
+  background-position: center, 0 0;
+  background-repeat: repeat;
+  position: absolute;
+  width: 220px;
+  height: 145px;
+  left: 370px;
+  top: 1453px;
+  background-color: var(--basic-light-white);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+
 .fabricators-list {
   list-style: none;
 }
@@ -272,7 +334,6 @@ box-sizing: border-box;
   text-align: center;
 }
 .services h2 {
-  font-family: Cuprum;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -280,14 +341,13 @@ box-sizing: border-box;
 }
 
 .services p {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--text-black);
 }
 
 .services ul {
-  font-family: Cuprum;
   font-size: 21px;
   line-height: 30px;
   color: var(--text-blue);
@@ -300,6 +360,34 @@ box-sizing: border-box;
   text-align: center;
 }
 
+.information h2 {
+  color: var(--text-black);
+}
+
+.information-list {
+  list-style: none;
+}
+
+.map h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.information p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.map p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black);
+}
 
 .main-footer {
   width: 1200px;
@@ -317,14 +405,30 @@ box-sizing: border-box;
   list-style: none;
 }
 
+.footer-contacts {
+  color: var(--text-adress)
+}
+
 .footer-services a {
-  color: var(-);
+  color: var(--text-footer-nav);
   text-decoration: underline;
+}
+
+.footer-services {
+  list-style: none;
 }
 
 .footer-services {
   text-align: center;
 }
+
+.footer-services-current a:not(href) {
+  background-color: var(--basic-white);
+  }
+
+  .footer-services-wrapper {
+ background-color: var(--basic-dack);
+  }
 
 .footer-features a {
   color: var(--text-footer-special-yellow);
@@ -342,7 +446,7 @@ box-sizing: border-box;
 
 .footer-copyright {
   background-color: var(--basic-dark-dark);
-  color: #FFFFFF;
+  color: var(--text-white);
   width: 1200px;
   height: 107px;
   font-size: 16px;
@@ -391,11 +495,10 @@ box-sizing: border-box;
   line-height: 24px;
   font: inherit;
   color: var(--text-black);
-  font-family: Cuprum;
   width: 620px;
   height: 430px;
  background-color: var(--basic-white);
-  /* серая полоска с кномкой наложенна на белый прямоугольник
+  /* серая полоска с кнопкой наложена на белый прямоугольник
   width: 620px;
   height: 112px;
  background-color: var(--basic-grey-pink); */
@@ -409,7 +512,7 @@ box-sizing: border-box;
  .login-form input[type="email"],
  .login-form input[type="text"] {
    font: inherit;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT Sans", Arial, sans-serif;
    color: var(--text-modal-grey);
    font-size: 13px;
   line-height: 24px;
