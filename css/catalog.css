@@ -1,0 +1,499 @@
+/* Variables */
+:root {
+  --basic-dark-dark: #293449;
+  --basic-dark: #32425C;
+  --basic-grey: #F1F5F7;
+  --basic-ligth-pink: #F9F5F0;
+  --basic-white: #F9F5F0;
+  --basic-grey-pink: #F4F4F4;
+  --basic-red: #EE3643;
+  --basic-black: #000000;
+  --basic-light-white: #FFFFFF;
+  --basic-ligth-black: #1D2739;
+
+/* text */
+
+  --text-blue: #32425C;
+  --text-black: #000000;
+  --text-white: #FFFFFF;
+  --text-red: #EE3643;
+  --text-footer-special-yellow: #FFD180;
+  --text-grey: #A9A9A9;
+  --text-footer-nav: #F1F5F7;
+  --text-adress: #F3F7F9;
+
+
+/* blocks */
+
+  --block-orange: #FFBF47;
+  --block-green: #8ED78F;
+  --block-blue: #3BBCE3;
+  --block-pink: #DC91D8;
+
+/* button */
+
+  --button-green: #63A63E;
+  --button-red: #EE3643;
+  --button-social: #212A3A;
+  --button-icon-grey: #C5C5C5;
+  --button-red-focus: #CA2C37;
+  --button-red-active: #BA2732;
+
+  a {
+    text-decoration: none;
+  }
+
+
+/* Global */
+.page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: var(--basic-light-white);
+  background-image: url("../img/photo.ipg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--basic-grey);
+}
+
+.main-navigation {
+  background-color: var(--basic-dark-dark);
+  width: 1200px;
+  height: 42px;
+  list-style: none;
+  text-align: center;
+}
+.main-navigation a {
+  color: var(--text-white);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-dark-dark);
+}
+
+span {
+  color: var(--text-white);
+}
+
+/* Не получается сделать разное состояние  main-navigation. */
+.shop {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--text-red);
+  font-style: italic;
+}
+
+.contact-phone {
+  font: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--text-red);
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-blue);
+}
+
+.user {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--text-black);
+}
+
+.user-information {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: var(--text-blue);
+}
+
+.site-navigation a {
+  color: var(--basic-light-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-dack);
+}
+
+.site-navigation {
+  width: 940px;
+  height: 60px;
+  color: var(--text-white);
+  background-color: var(--basic-dark);
+  text-align: center;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-dack);
+}
+
+
+.site-navigation-wrapper {
+  background-color: var(--basic-dack);
+}
+
+.site-navigation ul {
+  list-style: none;
+}
+
+.site-navigation ul{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.site-navigation ul{
+  text-align: center;
+}
+
+.site-navigation-current a:not(href) {
+background-color: var(--basic-light-white);
+}
+
+.main-navigation {
+font-family: "PT Sans", Arial, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: var(--text-black);
+background-color: var(--basic-light-white);
+}
+
+.breadcrumbs ul {
+  list-style: none;
+}
+
+.breadclumbs a {
+  color: var(--text-black);
+}
+
+.breadcrumbs a:not(href) {
+  background-color: var(--basic-light-white);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: var(--text-black);
+}
+
+h1 {
+  width: 30px;
+  height: 30px;
+  text-transform: uppercase;
+  color: var(--text-bluе);
+}
+
+
+h4 {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.title-list ul {
+  list-style: none;
+}
+
+.title-list {
+  font-size: 13px;
+  line-height: 18px;
+}
+/* Цвет на красный не изменился в item1 */
+.title-item1 {
+  font: inherit;
+  color: var(--text-red);
+}
+
+.title-item2,
+.title-item3 {
+  color: var(--text-black);
+  opacity: 0.3;
+}
+
+.price {
+  font: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black)
+}
+
+.price-range {
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+/* Почему-то не меняется толщина шрифта здесь и в .price */
+.filters legend {
+  font: inherit;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black)
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 19px;
+}
+
+.filter-input-checkbox filter-input {
+  color: var(--button-icon-grey)
+}
+
+/* Popular-products */
+.index-columns1 {
+  font: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("../img/photo.jpg");
+  background-position: center, 0 0;
+  background-repeat: repeat;
+  background-color: var(--text-white);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+
+.old,
+.actual {
+  font: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.old {
+  color: var(--text-grey);
+}
+
+.actual {
+  color: var(--text-white);
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-blue);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item pagination-item-current a:active {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-white);
+  background-color: var(--basic-red);
+}
+
+
+.pagination-item a:active {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--text-black);
+  background-color: var(--basic-light-white);
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pagination-item,
+.pagination-item pagination-item-current a:calm {
+  color: var(--text-black);
+  background-color: var(--basic-light-white);
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+
+.pagination-item,
+.pagination-item pagination-item-current a:hover {
+  color: var(--text-black);
+  background-color: var(--basic-light-white);
+  border: 1px solid #C5C5C5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.pagination-item a:focus {
+  color: var(--text-black);
+  background-color: var(--basic-light-white);
+  border: 1px solid #EE3643;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.information {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.information-hammerdrill {
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--text-black)
+}
+
+
+/* Footer */
+.main-footer {
+  width: 1200px;
+  height: 300px;
+  list-style: none;
+}
+
+.footer-navigation {
+  background-color: var(--basic-dark);
+  color:  var(--basic-light-white);
+  width: 1200px;
+  height: 193px;
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+}
+
+.footer-contacts {
+  color: var(--text-adress)
+}
+
+.footer-services a {
+  color: var(--text-footer-nav);
+  text-decoration: underline;
+}
+
+.footer-services {
+  list-style: none;
+}
+
+.footer-services {
+  text-align: center;
+}
+
+.footer-services-current a:not(href) {
+  background-color: var(--basic-white);
+  }
+
+  .footer-services-wrapper {
+ background-color: var(--basic-dack);
+  }
+
+.footer-features a {
+  color: var(--text-footer-special-yellow);
+  text-decoration: underline;
+}
+
+.footer-features {
+  text-align: center;
+}
+
+.footer-services-wrapper,
+.footer-features-wrapper {
+  background-color: var(--basic-dark);
+}
+
+.footer-copyright {
+  background-color: var(--basic-dark-dark);
+  color: var(--text-white);
+  width: 1200px;
+  height: 107px;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.footer-social {
+  text-align: center;
+ }
+
+ .footer-social ul {
+   list-style: none;
+ }
+
+ .footer-social a {
+   color: var(--text-light-white);
+   text-decoration: underline;
+ }
+
+
+.footer-links {
+  color: var(--text-white)
+}
+
+.footer-links:focus a {
+  color: var(--text-red);
+}
+
+.footer-mail a,
+.footer-site a {
+  color: var(--text-footer-special-yellow);
+  text-decoration: underline;
+}
+
+.footer-mail:hover a,
+.footer-site:hover a {
+  background-color: var(--text-footer-special-yellow);
+}
+
+.footer-mail:focus a,
+.footer-site:focus a {
+  background-color: var(--text-red);
+}
+
+
+/* Social-button */
+.social-button {
+  color: var(--basic-white);
+  /* background: можно нарисовать в svg круг и залить его чёрным; */
+}
+
+.social-button:focus,
+.social-button:active {
+  background-color: var(--basic-red);
+}
+
+.cart {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: var(--text-black)
+}

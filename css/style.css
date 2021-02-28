@@ -1,45 +1,3 @@
-/* Fonts */
-@font-face {
-    font-family: "PT Sans", sans-serif;
-    src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans", sans-serif;
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-  url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@Font-face {
-  font-family: "Cuprum", sans-serif;
-  src: url("../fonts/cuprum.woff2") format("woff2"),
-  url("../fonts/cuprum.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@Font-face {
-  font-family: "Cuprum", sans-serif;
-  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
-  url("../fonts/cuprumitalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Cuprum", sans-serif;
-  src: url("../fonts/cuprum.woff2") format("woff2"),
-  url("../fonts/cuprum.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-
 /* Variables */
 :root {
     --basic-dark-dark: #293449;
@@ -63,6 +21,7 @@
     --text-grey: #A9A9A9;
     --text-footer-nav: #F1F5F7;
     --text-adress: #F3F7F9;
+    --text-greylight: #C5C5C5;
 
 
 /* blocks */
@@ -84,7 +43,6 @@
 
 /* modal */
     --border-grey: #C5C5C5;
-
 }
 
 /* Global */
@@ -96,22 +54,27 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  background-color: var(--basic-white);
+  background-color: var(--basic-light-white);
   background-image: url("../img/bg.ipg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+a {
+  text-decoration: none;
+}
 
 img {
   max-width: 100%;
   height: auto;
 }
 
+.main-header {
+  background-color: var(--basic-grey);
+}
+
 .main-navigation {
   background-color: var(--basic-dark-dark);
-  font-size: 18px;
-  line-height: 24px;
   width: 1200px;
   height: 42px;
   list-style: none;
@@ -162,13 +125,61 @@ span {
   line-height: 21px;
 }
 
-.site-navigation a {
-  color: var(--basic-white);
+.login-link-current a:not([href]) {
+  background: var(--basic-light-white);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: var(--basic-dack);
+
+.registration-link a:not([href]) {
+  background: var(--basic-light-white);
+}
+
+.login-link a,
+.registration-link a {
+  background-color: var(--basic-light-white);
+}
+/*
+<!-- Как сделать чёрный цвет этой иконке в состоянии наведении? */
+/* <img src="img/icon.svg/icon-entry.svg" width="14" height="17" alt="#">--> */
+.login-link a:hover,
+.registration-link a:hover {
+  color: var(--text-red);
+  background-color: var(--basic-light-white);
+}
+
+.login-link a:focus,
+.registration-link a:focus {
+  color: var(--text-greylight);
+  background-color: var(--basic-light-white);
+}
+
+.user {
+  font-size: 21px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: var(--text-black);
+  background-color: var(--basic-light-white);
+}
+
+.user a:hover {
+color: var(--text-black);
+}
+
+.user a:focus {
+  color: var(--text-greylight);
+}
+
+.user-information {
+color: var(--text-blue);
+}
+
+.user-information a:hover {
+  color: var(--text-red);
+}
+
+.user-information a:focus {
+  color: var(--text-greylight);
 }
 
 .site-navigation {
@@ -179,11 +190,20 @@ span {
   text-align: center;
 }
 
+.site-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-dack);
+}
+
 .site-navigation-wrapper {
   background-color: var(--basic-dack);
 }
 
-.site-navigation {
+.site-navigation ul {
   list-style: none;
 }
 
@@ -260,11 +280,11 @@ background-color: var(--basic-white);
   border: none;
 }
 
-.button:focus {
+.button:hover {
   background-color: var(--button-red-focus);
 }
 
-.button:active {
+.button:focus {
   background-color: var(--button-red-active);
 }
 
@@ -350,15 +370,23 @@ h2 {
 .services ul {
   font-size: 21px;
   line-height: 30px;
-  color: var(--text-blue);
-}
+  text-align: center;
+  }
+
 .services-list {
   list-style: none;
 }
 
-.services-item {
-  text-align: center;
+.services-item1 {
+  color: var(--text-blue);
 }
+
+.services-item2,
+.services-item3 {
+color: var(--text-white);
+}
+
+
 
 .information h2 {
   color: var(--text-black);
@@ -389,6 +417,7 @@ h2 {
   color: var(--text-black);
 }
 
+/* Footer */
 .main-footer {
   width: 1200px;
   height: 300px;
@@ -397,7 +426,7 @@ h2 {
 
 .footer-navigation {
   background-color: var(--basic-dark);
-  color: #FFFFFF;
+  color:  var(--basic-light-white);
   width: 1200px;
   height: 193px;
   font-size: 18px;
@@ -454,8 +483,26 @@ h2 {
   list-style: none;
 }
 
+.footer-social {
+  text-align: center;
+ }
+
+ .footer-social ul {
+   list-style: none;
+ }
+
+ .footer-social a {
+   color: var(--text-light-white);
+   text-decoration: underline;
+ }
+
+
 .footer-links {
   color: var(--text-white)
+}
+
+.footer-links:focus a {
+  color: var(--text-red);
 }
 
 .footer-mail a,
@@ -464,13 +511,13 @@ h2 {
   text-decoration: underline;
 }
 
-.footer-mail:focus a,
-.footer-site:focus a {
+.footer-mail:hover a,
+.footer-site:hover a {
   background-color: var(--text-footer-special-yellow);
 }
 
-.footer-mail:actuve a,
-.footer-site:active a {
+.footer-mail:focus a,
+.footer-site:focus a {
   background-color: var(--text-red);
 }
 
@@ -486,9 +533,6 @@ h2 {
   background-color: var(--basic-red);
 }
 
-.footer-social {
-  text-align: center;
- }
 
  .modal-login {
   font-size: 18px;
@@ -506,6 +550,10 @@ h2 {
  background-repeat: repeat;
  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
  text-align: left;
+ }
+
+ .modal-login {
+   text-align: center;
  }
 
  .login-form input[type="login"],
