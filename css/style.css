@@ -1,8 +1,10 @@
 /* Variables */
 :root {
     --basic-dark-dark: #293449;
+    --basic-very-dark: #161D29;
     --basic-dark: #32425C;
-    --basic-grey: #F1F5F7;
+    --basic-lidth-grey: #F1F5F7;
+    --basic-grey: #A9A9A9;
     --basic-ligth-pink: #F9F5F0;
     --basic-white: #F9F5F0;
     --basic-grey-pink: #F4F4F4;
@@ -10,6 +12,9 @@
     --basic-black: #000000;
     --basic-light-white: #FFFFFF;
     --basic-ligth-black: #1D2739;
+    --basic-ligth-green: #5FBB2D;
+    --basic-green: #63A63E;
+
 
 /* text */
 
@@ -34,11 +39,14 @@
 /* button */
 
     --button-green: #63A63E;
+    --buttuon-active-green: #518534;
+    --button-hover-green: #5FBB2D;
     --button-red: #EE3643;
     --button-social: #212A3A;
     --button-icon-grey: #C5C5C5;
-    --button-red-focus: #CA2C37;
+    --button-red-hover: #CA2C37;
     --button-red-active: #BA2732;
+    --button-icon-link: #3D546F;
 
 
 /* modal */
@@ -80,20 +88,49 @@ img {
   list-style: none;
   text-align: center;
 }
+
 .main-navigation a {
   color: var(--text-white);
+  background-color: var(--basic-dark-dark);
+  opacity: 0.3;
 }
 
 .main-navigation-wrapper {
   background-color: var(--basic-dark-dark);
 }
 
-/* Логотип как img не подходит, потому что меняем цвет в разном состоянии */
-span {
-  color: var(--text-white);
+.order {
+  background-color: var(--basic-green);
 }
 
-/* Не получается сделать разное состояние  main-navigation. */
+/* Логотипа не видно на панели навигации*/
+.logo {
+  color: var(--text-white);
+  background-color:  var(--basic-red);
+}
+
+.logo:active {
+  background-color: var(--button-red-active);
+}
+
+.main-navigation a:hover {
+  background-color: var(--basic-dark-dark);
+  opacity: none;
+}
+
+.order a:hover {
+  background-color: var(--basic-ligth-green);
+}
+
+.main-navigation a:actuve {
+background-color: var(--basic-dark-dark);
+opacity: 0.3;
+}
+
+.bookmarks,
+.cart a:active {
+background-color: var(--basic-very-dark);
+}
 
 .shop {
   font-size: 16px;
@@ -113,16 +150,13 @@ span {
   line-height: 24px;
   color: var(--text-blue);
 }
-/* Слова в ссылках не становятся чёрными */
-.login-link a,
-.registration-link a {
-  color: var(--text-black);
-}
 
 .login-link,
 .registration-link {
   font-size: 21px;
   line-height: 21px;
+  color: var(--text-black);
+  background-image: url(img/icon.svg/icon-entry.svg) var(--button-icon-grey);
 }
 
 .login-link-current a:not([href]) {
@@ -138,48 +172,19 @@ span {
 .registration-link a {
   background-color: var(--basic-light-white);
 }
-/*
-<!-- Как сделать чёрный цвет этой иконке в состоянии наведении? */
-/* <img src="img/icon.svg/icon-entry.svg" width="14" height="17" alt="#">--> */
+
 .login-link a:hover,
 .registration-link a:hover {
   color: var(--text-red);
   background-color: var(--basic-light-white);
+  background-image: url(img/icon.svg/icon-entry.svg) var(--button-icon-link);
 }
 
-.login-link a:focus,
-.registration-link a:focus {
+.login-link a:active,
+.registration-link a:active {
   color: var(--text-greylight);
   background-color: var(--basic-light-white);
-}
-
-.user {
-  font-size: 21px;
-  line-height: 21px;
-  align-items: center;
-  text-align: center;
-  color: var(--text-black);
-  background-color: var(--basic-light-white);
-}
-
-.user a:hover {
-color: var(--text-black);
-}
-
-.user a:focus {
-  color: var(--text-greylight);
-}
-
-.user-information {
-color: var(--text-blue);
-}
-
-.user-information a:hover {
-  color: var(--text-red);
-}
-
-.user-information a:focus {
-  color: var(--text-greylight);
+  background-image: url(img/icon.svg/icon-entry.svg) var(--button-icon-grey);
 }
 
 .site-navigation {
@@ -220,28 +225,68 @@ color: var(--text-blue);
 background-color: var(--basic-white);
 }
 
-/* Features */
-.features {
+/* Features не меняется цвет текста*/
+.features a {
   list-style: none;
+  color: var(--text-white);
 }
 
-.feature h3 {
-  text-align: left;
-}
-
-.feature h3 {
+.feature {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  text-align: left;
+  color: var(--text-white);
 }
 
-.feature-current a:not(href) {
+.features-current a:not(href) {
   background-color: var(--basic-white);
 }
 
-.features-usefulness {
+.features-usefulness block-orange,
+.features-usefulness block-blue,
+.features-usefulness block-green,
+.features-usefulness block-pink {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+}
+
+.features-usefulness block-orange {
+  background-color: var(--block-orange);
+  background-image: url(img/icon.svg/icon-materials.svg);
+}
+
+.features-usefulness block-orange:hover {
+  background-color: var(--border-grey);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  }
+
+.features-usefulness block-orange:active {
+  background-color: var(--text-grey);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.features-usefulness block-blue {
+  background-color: var(--block-blue);
+  background-image: url(img/icon.svg/icon-instrument.svg);
+}
+
+.features-usefulness block-pink {
+  background-color: var(--block-pink);
+  background-image: url(img/icon.svg/icon-technic.svg);
+}
+
+.features-usefulness block-green {
+  background-color: var(--block-green);
+  background-image: url(img/icon.svg/icon-sales.svg);
+}
+
+.features-usefulness block-orange {
+  background-color: var(--block-orange);
+  background-image: url(img/icon.svg/icon-delivery.svg);
 }
 
 .gallery {
@@ -270,44 +315,110 @@ background-color: var(--basic-white);
   border: 7px solid var(--basic-white)
 }
 
-.button {
-  font: inherit;
+.button-small,
+.button-information,
+.button-map,
+.button-send {
+  height: 38px;
   text-align: center;
-  color: var(--basic-white);
+  color: var(--basic-light-white);
   vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--button-red);
   border: none;
 }
 
-.button:hover {
-  background-color: var(--button-red-focus);
+.button-small {
+  width: 192px;
 }
 
-.button:focus {
+.button-information {
+  width: 220px;
+}
+
+.button-map {
+  width: 300px;
+}
+
+.button-send {
+  width: 460px;
+}
+
+.button-small:hover,
+.button-information:hover,
+.button-map:hover,
+.button-send:hover {
+  background-color: var(--button-red-hover);
+}
+
+.button-small:active,
+.button-information:active,
+.button-map:active,
+.button-send:active {
   background-color: var(--button-red-active);
 }
 
 /* Popular-products */
+.all-products {
+  width: 940px;
+  height: 427px;
+  left: 130px;
+  top: 847px;
+}
+
+.popular-products {
+  width: 940px;
+  height: 89px;
+  left: 130px;
+  top: 847px;
+  background-color: var(--basic-ligth-pink);
+}
+
 .index-columns1 {
-  font: inherit;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
+  width: 940px;
+  height: 427px;
+  left: 130px;
+  top: 847px;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: var(--basic-light-white);
   background-image: url("../img/photo.jpg");
   background-position: center, 0 0;
   background-repeat: repeat;
-  background-color: var(--text-white);
   border: 1px solid #EAEAEA;
   box-sizing: border-box;
 }
 
+.popular-product {
+  width: 220px;
+  height: 318px;
+  background-image: url(img/.jpg);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+
+.products,
+.popular-fabricators,
+.delivery {
+  font-size: 30px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--text-blue);
+}
+
+.hammer-drill {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: var(--text-black);
+}
+
 .old,
 .actual {
-  font: inherit;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -320,19 +431,39 @@ background-color: var(--basic-white);
 }
 
 .actual {
+  width: 141px;
+  height: 38px;
   color: var(--text-white);
+  background-image: url(img/logo.svg/red-button.svg);
+  border: none;
 }
-
-h2 {
-  font-size: 30px;
-  line-height: 30px;
+.new {
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
   text-transform: uppercase;
-  color: var(--text-blue);
+  color: var(--text-white);
+  transform: rotate(45deg);
 }
 
 /* "Fabricators" */
+.all-fabricators {
+  width: 940px;
+  height: 419px;
+  left: 130px;
+  top: 1344px;
+}
+
+.fabricators {
+  width: 940px;
+  height: 89px;
+  left: 130px;
+  top: 1344px;
+  background-color: var(--basic-ligth-pink);
+}
+
 .index-columns2 {
-  background-color: var(--basic-white);
   background-image: url("../img/logo.svg/");
   background-position: center, 0 0;
   background-repeat: repeat;
@@ -353,24 +484,39 @@ h2 {
 .fabricators-item {
   text-align: center;
 }
-.services h2 {
+.fabricators-item {
+  width: 220px;
+  height: 145px;
+  background-image: url(Image.svg);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+
+/* Services */
+.services {
+  background-color: var(--basic-lidth-grey);
+}
+
+.services-information,
+.delivery-information {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--text-black);
 }
 
-.services p {
+.services-information {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--text-black);
 }
+/* Как изобразить тире? */
 
 .services ul {
   font-size: 21px;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   }
 
 .services-list {
@@ -387,7 +533,7 @@ color: var(--text-white);
 }
 
 
-
+/* Information */
 .information h2 {
   color: var(--text-black);
 }
@@ -396,6 +542,7 @@ color: var(--text-white);
   list-style: none;
 }
 
+.information h2,
 .map h2 {
   font-size: 30px;
   line-height: 30px;
@@ -403,35 +550,28 @@ color: var(--text-white);
   color: var(--text-black);
 }
 
+.map p,
 .information p {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-}
-
-.map p {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
   color: var(--text-black);
 }
+
+
 
 /* Footer */
 .main-footer {
   width: 1200px;
   height: 300px;
-  list-style: none;
 }
 
 .footer-navigation {
   background-color: var(--basic-dark);
   color:  var(--basic-light-white);
-  width: 1200px;
-  height: 193px;
   font-size: 18px;
   line-height: 24px;
-  list-style: none;
 }
 
 .footer-contacts {
@@ -443,7 +583,7 @@ color: var(--text-white);
   text-decoration: underline;
 }
 
-.footer-services {
+.footer-services-list{
   list-style: none;
 }
 
@@ -453,18 +593,30 @@ color: var(--text-white);
 
 .footer-services-current a:not(href) {
   background-color: var(--basic-white);
-  }
+}
 
   .footer-services-wrapper {
  background-color: var(--basic-dack);
-  }
+}
 
 .footer-features a {
   color: var(--text-footer-special-yellow);
   text-decoration: underline;
 }
 
+.footer-features-list {
+  list-style: none;
+}
+
+.footer-services-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text-footer-nav);
+}
+
 .footer-features {
+  width: 1200px;
+  height: 107px;
   text-align: center;
 }
 
@@ -485,13 +637,13 @@ color: var(--text-white);
 
 .footer-social {
   text-align: center;
- }
+}
 
- .footer-social ul {
+.footer-social ul {
    list-style: none;
- }
+}
 
- .footer-social a {
+.footer-social a {
    color: var(--text-light-white);
    text-decoration: underline;
  }
@@ -550,6 +702,7 @@ color: var(--text-white);
  background-repeat: repeat;
  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
  text-align: left;
+ display: none ;
  }
 
  .modal-login {
@@ -569,3 +722,6 @@ color: var(--text-white);
   border: 2px solid #C5C5C5;
  }
 
+ .modal-big-map {
+  display: none ;
+ }

@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ТЕХНОМАРТ</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="icon" href="favicon.ico">
@@ -22,14 +24,14 @@
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
         <div class="container">
-          <span>ТЕХНОМАРТ</span>
+          <span class="logo">ТЕХНОМАРТ</span>
           <img src="img/icon.svg/icon-search.svg" width="11" height="11" alt="Поиск">
           <a href="search.html">Поиск</a>
           <img src="img/icon.svg/icon-bookmarks.svg" width="11" height="11" alt="Закладки">
-          <a href="blank.html">Закладки</a>
+          <a class="bookmarks" href="blank.html">Закладки</a>
           <img src="img/icon.svg/icon-cart.svg" width="11" height="11" alt="Корзина">
-          <a href="blank.html">Корзина</a>
-          <a href="catalog.html">Оформить заказ</a>
+          <a class="cart" href="blank.html">Корзина</a>
+          <a class="order" href="catalog.html">Оформить заказ</a>
         </div>
       </div>
     </nav>
@@ -86,31 +88,31 @@
     <h2 class="visually-hidden">Продукция</h2>
     <section class="features">
       <div>
-        <h3>Материалы</h3>
+        <h3 class="feature">Материалы</h3>
         <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
         <span>NEW</span>
-        <a class="features-usefulness" href="blank.html">НА ЛЮБОЙ ВКУС></a>
-        <img src="img/icon.svg/icon-materials.svg" alt="Материалы">
+        <a class="features-usefulness block-orange" href="blank.html">НА ЛЮБОЙ ВКУС</a>
+        <img src="img/icon.svg/icon-materials.svg" width="44" height="65" alt="Материалы">
       </div>
       <div>
-        <h3>Инструмент</h3>
-        <a class="features-usefulness" href="blank.html">НА ВСЕ СЛУЧАИ></a>
-        <img src="img/icon.svg/icon-instrument.svg" alt="Инструменты">
+        <h3 class="feature">Инструмент</h3>
+        <a class="features-usefulness block-blue" href="blank.html">НА ВСЕ СЛУЧАИ</a>
+        <img src="img/icon.svg/icon-instrument.svg" width="75" height="61" alt="Инструмент">
       </div>
       <div>
-        <h3>Техника</h3>
-        <a class="features-usefulness" href="blank.html">ДЛЯ СТРОЙКИ></a>
-        <img src="img/icon.svg/icon-technic.svg" alt="Техника">
+        <h3 class="feature">Техника</h3>
+        <a class="features-usefulness block-green" href="blank.html">ДЛЯ СТРОЙКИ</a>
+        <img src="img/icon.svg/icon-technic.svg" width="78" height="62" alt="Техника">
       </div>
       <div>
-        <h3>Скидки 50%</h3>
-        <a class="features-usefulness" href="blank.html">НА 350 ТОВАРОВ></a>
-        <img src="img/icon.svg/icon-sales.svg" alt="Скидки">
+        <h3 class="feature">Скидки 50%</h3>
+        <a class="features-usefulness block-pink" href="blank.html">НА 350 ТОВАРОВ</a>
+        <img src="img/icon.svg/icon-sales.svg" width="59" height="72" alt="Скидки">
       </div>
       <div>
-        <h3>Доставка</h3>
-        <a class="features-usefulness" href="blank.html">БЕСПЛАТНО</a>
-        <img src="img/icon.svg/icon-delivery.svg" alt="Доставка">
+        <h3 class="feature">Доставка</h3>
+        <a class="features-usefulness block-orange" href="blank.html">БЕСПЛАТНО</a>
+        <img src="img/icon.svg/icon-delivery.svg" width="78" height="63" alt="Доставка">
       </div>
     </section>
 
@@ -128,71 +130,68 @@
       </div>
       <div>
         <a class="button" href="catalog.html"> </a>
-        <button class="button" type="button">ОТКРЫТЬ КАТАЛОГ</button>
+        <button class="button-small" type="button">ОТКРЫТЬ КАТАЛОГ</button>
       </div>
     </section>
 
-    <section class="popular-products">
-      <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
-      <a class="button" href="/catalog/popular-products.html"></a>
-      <button class="buttom" type="button">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
-    </section>
-
-    <div class="index-columns1">
-      <section class="popular-products">
+<section class="all-products">
+    <div class="popular-products">
+      <h2 class="products">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+      <a class="button-small" href="/catalog/popular-products.html"></a>
+      <button class="buttom-small" type="button">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
+    </div>
+    <section class="index-columns1">
         <div class="popular-product">
           <a href="product.html">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <h3 class="hammer-drill">Перфоратор BOSCH BFG 9000</h3>
             <img src="img/photo.jpg/drill-1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
           </a>
           <p class="old"><del>32500 Р.</del></p>
-          <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
           <p class="actual">25500 Р.</p>
         </div>
 
         <div class="popular-product">
           <a href="product.html">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h3 class="hammer-drill">Перфоратор BOSCH BFG 3000</h3>
             <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
-            <span>NEW</span>
+            <span class="new">NEW</span>
             <img src="img/photo.jpg/drill-2.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000">
           </a>
           <p class="old"><del>22500 Р.</del></p>
-          <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
           <p class="actual">15500 Р.</p>
         </div>
 
         <div class="popular-product">
           <a href="product.html">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h3 class="hammer-drill">Перфоратор BOSCH BFG 6000</h3>
             <img src="img/photo.jpg/drill-3.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
           </a>
           <p class="old"><del>30500 Р.</del></p>
-          <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
           <p class="actual">25500 Р.</p>
         </div>
 
         <div class="popular-product">
           <a href="product.html">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h3 class="hammer-drill">Перфоратор BOSCH BFG 2000</h3>
             <img src="img/logo.svg/new.svg" width="69" height="69" alt="Новинка">
-            <span>NEW</span>
+            <span class="new">NEW</span>
             <img src="img/photo.jpg/drill-2.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000">
           </a>
           <p class="old"><del>22500 Р.</del></p>
-          <img src="img/logo.svg/red-button.svg" width="141" height="38" alt="Красная кнопка">
           <p class="actual">12500 Р.</p>
         </div>
       </section>
-    </div>
+    </section>
 
-    <section class="fabricators">
-      <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
-      <a class="button" href="/catalog/popular-fabricators.html"></a>
-      <button class="button" type="button">ВСЕ ПРОИЗВОДИТЕЛИ</button>
+    <section class="all-fabricators">
+      <div class="fabricators">
+      <h2 class="popular-fabricators">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
+      <a class="button-small" href="/catalog/popular-fabricators.html"></a>
+      <button class="button-small" type="button">ВСЕ ПРОИЗВОДИТЕЛИ</button>
+    </div>
       <div class="index-columns2">
         <ul class="fabricators-list">
-          <li class="fabricators-item">
+          <li class="fabricators-item1">
             <img src="img/logo.svg/bosch.svg" alt="Логотип BOSCH" width="220" height="145">
           </li>
           <li class="fabricators-item">
@@ -219,25 +218,29 @@
         </ul>
       </div>
     </section>
+
     <section class="services">
       <h2>Сервисы</h2>
-      <p class="services">Хороший интернет-магазин отличается от плохого не только ценами! <br>
+      <p class="services-information">Хороший интернет-магазин отличается от плохого не только ценами! <br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul class="services-list">
+      <div>
+        <ul class="services-list">
         <li class="services-item1">Доставка</li>
         <li class="services-item2">Гарантия</li>
         <li class="services-item3">Кредит</li>
       </ul>
+    </div>
+      <section>
+        <h2 class="delivery-information">Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо <br>
+          к вашему подъезду совершенно бесплатно!
+          <br>Ведь мы неплохо заработаем,
+          <br>поднимая его на ваш этаж!
+        </p>
+        <img src="img/photo.png/truck.png" width="468" height="261" alt="Грузовик">
+      </section>
     </section>
-    <section>
-      <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо <br>
-        к вашему подъезду совершенно бесплатно!
-        <br>Ведь мы неплохо заработаем,
-        <br>поднимая его на ваш этаж!
-      </p>
-      <img src="img/photo.png/truck.png" width="468" height="261" alt="Грузовик">
-    </section>
+
     <section class="information">
       <h2>Компания &#171;ТЕХНОМАРТ&#187;</h2>
       <p class="information">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
@@ -250,7 +253,7 @@
         <li class="information-item">ЖелДорЭкспедиция</li>
       </ul>
       <a class="button" href="blank.html"></a>
-      <button class="button information" type="button">ПОДРОБНЕЕ О КОМПАНИИ</button>
+      <button class="button-information" type="button">ПОДРОБНЕЕ О КОМПАНИИ</button>
     </section>
     <section class="map">
       <h2>КОНТАКТЫ</h2>
@@ -258,14 +261,14 @@
         заехав в наш офис:</p>
       <img src="img/photo.png/address.png" width="300" height="158" alt="Карта с адресом Большая Конюшенная 19">
       <a class="buttom map" href="form"></a>
-      <button class="button map" type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
+      <button class="button-map" type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
     </section>
   </main>
 
   <footer class="main-footer">
     <section class="footer-navigation">
       <section class="main-footer-logo">
-        <span>ТЕХНОМАРТ</span>
+        <span class="logo">ТЕХНОМАРТ</span>
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
@@ -302,17 +305,17 @@
     <section class="footer-features">
       <div class="footer-features-wrapper">
         <div class="container">
-          <ul>
-            <li>
+          <ul class="footer-features-list">
+            <li class="footer-features-item">
               <a href="#">Материалы</a>
             </li>
-            <li>
+            <li class="footer-features-item">
               <a href="#">Техника</a>
             </li>
-            <li>
+            <li class="footer-features-item">
               <a href="#">Инструмент</a>
             </li>
-            <li>
+            <li class="footer-features-item">
               <a href="#">Спецпредложения</a>
             </li>
           </ul>
@@ -374,7 +377,7 @@
           <label for="login-text">Текст письма:</label>
           <textarea class="login-icon-text" id="login-text" name="text" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="button">ОТПРАВИТЬ</button>
+        <button class="button-send" type="button">ОТПРАВИТЬ</button>
         <div>
           <button type="button">
             <img src="img/icon.svg/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
@@ -386,7 +389,7 @@
   <section class="modal-big-map">
     <img src="img/photo.png/big-map.png" width="970" height="477" alt="Большая карта">
     <img src="img/icon.svg/icon-close.svg" width="21" height="21" alt="Закрыть">
-    <a class="button contacts" href="#"></a>
+    <a class="button-contacts" href="#"></a>
   </section>
 </body>
 
