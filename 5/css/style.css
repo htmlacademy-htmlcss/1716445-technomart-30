@@ -78,7 +78,7 @@ img {
 }
 
 .main-header {
-  background-color: var(--basic-grey);
+  background-color: var(--basic-lidth-grey);
 }
 
 .main-navigation {
@@ -99,7 +99,9 @@ img {
   background-color: var(--basic-dark-dark);
 }
 
-.order {
+.ordering {
+  width: 150px;
+  height: 42px;
   background-color: var(--basic-green);
 }
 
@@ -225,10 +227,23 @@ background-color: var(--basic-very-dark);
 background-color: var(--basic-white);
 }
 
+юsite-navigation-list,
+.site-navigation-item {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+
 /* Features не меняется цвет текста*/
 .features a {
   list-style: none;
   color: var(--text-white);
+}
+
+.features {
+  width: 300px;
+  height: 123px;
 }
 
 .feature {
@@ -287,6 +302,21 @@ background-color: var(--basic-white);
 .features-usefulness block-orange {
   background-color: var(--block-orange);
   background-image: url(img/icon.svg/icon-delivery.svg);
+}
+.block-orange {
+  background-color: var(--block-orange);
+}
+
+.block-blue {
+  background-color: var(--block-blue);
+}
+
+.block-green {
+  background-color: var(--block-green);
+}
+
+.block-pink {
+  background-color: var(--block-pink);
 }
 
 .gallery {
@@ -599,6 +629,13 @@ color: var(--text-white);
  background-color: var(--basic-dack);
 }
 
+.footer-services-list,
+.footer-services-item {
+  float: right;
+  margin:0px;
+  padding: 0px;
+}
+
 .footer-features a {
   color: var(--text-footer-special-yellow);
   text-decoration: underline;
@@ -618,6 +655,13 @@ color: var(--text-white);
   width: 1200px;
   height: 107px;
   text-align: center;
+}
+
+.footer-features-list,
+.footer-features-item {
+  float: right;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer-services-wrapper,
